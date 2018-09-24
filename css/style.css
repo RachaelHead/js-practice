@@ -39,14 +39,27 @@ ul{
 #tool-tip{
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #ffffff;
   width: 150px;
-  height: 150px;
-  border: 1px solid #6d6e71;
+  height: 50px;
   border-radius: 7px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 105px;
+  left: 150px;
   opacity: 0;
-  transition: 
+  transition:
+}
+
+#tool-tip:before{
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  position:absolute;
+  bottom: 100%;
+  left: 50%;
 }

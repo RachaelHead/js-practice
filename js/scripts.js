@@ -22,8 +22,9 @@ closeBtn.addEventListener('click', function(){
 word.addEventListener('mouseenter', function(event){
   console.log('hover');
   tooltip.style.opacity = '1';
-  var x = event.pageX;     // Get the horizontal coordinate
-  var y = event.pageY;     // Get the vertical coordinate
-  var coor = "X coords: " + x + ", Y coords: " + y;
-  console.log('x');
+});
+
+word.addEventListener('mouseleave', function(event){
+  console.log('hover');
+  tooltip.style.opacity = '0';
 });
